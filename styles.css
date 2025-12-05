@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #e5e7eb;
+}
+
+.card {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 18px;
+    padding: 32px 28px 40px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.08);
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-bottom: 24px;
+}
+
+.road-wrapper {
+    position: relative;
+    height: 90px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130%;
+    height: 36px;
+    background: #020617;
+    border-radius: 999px;
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.9);
+}
+
+.road::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    right: 8%;
+    height: 4px;
+    transform: translateY(-50%);
+    background-image: repeating-linear-gradient(to right,
+            #facc15 0 30px,
+            transparent 30px 42px);
+    opacity: 0.9;
+}
+
+.tractor {
+    position: absolute;
+    bottom: 10px;
+    font-size: 2.4rem;
+    animation: drive 5s linear infinite;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+.small-text {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 16px;
+}
