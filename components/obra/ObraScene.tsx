@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { SleepingDriver } from "./SleepingDriver";
 import { Worker } from "./Worker";
 import s from "./obra.module.css";
 
@@ -167,13 +168,13 @@ function SandPile() {
 function Sign() {
   return (
     <g>
-      <path className={s.ink} d="M872 500V424M944 500V424" />
-      <rect className={s.yellowBlock} x={856} y={392} width={104} height={46} rx={4} />
-      <text className={s.signText} x={908} y={424} textAnchor="middle">
+      <path className={s.ink} d="M872 500V378M944 500V378" />
+      <rect className={s.yellowBlock} x={856} y={346} width={104} height={46} rx={4} />
+      <text className={s.signText} x={908} y={378} textAnchor="middle">
         OBRA
       </text>
-      <rect className={s.dark} x={902} y={380} width={12} height={12} rx={2} />
-      <circle className={s.lamp} cx={908} cy={376} r={6} />
+      <rect className={s.dark} x={902} y={334} width={12} height={12} rx={2} />
+      <circle className={s.lamp} cx={908} cy={330} r={6} />
     </g>
   );
 }
@@ -238,6 +239,8 @@ export default function ObraScene() {
       <Crane />
       <SandPile />
       <Sign />
+      {/* motorista tirando um cochilo debaixo da placa */}
+      <SleepingDriver x={888} y={500} />
       <Cone x={380} />
       <Cone x={820} />
       <Cone x={985} />

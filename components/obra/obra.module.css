@@ -1224,3 +1224,151 @@
     transform: translateX(1200px);
   }
 }
+
+/* ---------- Motorista dormindo ---------- */
+
+.driverShirt {
+  fill: #0000fe;
+  stroke: var(--line);
+  stroke-width: 3;
+}
+
+.cap {
+  fill: #0000fe;
+  stroke: var(--line);
+  stroke-width: 2.6;
+  stroke-linejoin: round;
+}
+
+.capButton {
+  fill: var(--paper);
+  stroke: var(--line);
+  stroke-width: 2;
+}
+
+.snore {
+  fill: var(--line);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: snore 3.2s ease-in-out infinite;
+}
+
+@keyframes snore {
+  0%,
+  100% {
+    transform: scale(0.6);
+  }
+  55% {
+    transform: scale(1.2);
+  }
+}
+
+/* Barriga enchendo e esvaziando devagar */
+.breath {
+  animation: breath 3.2s ease-in-out infinite;
+}
+
+@keyframes breath {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  55% {
+    transform: scale(1.06, 1.05);
+  }
+}
+
+/* Cabeça pendendo e dando aquela "pescada" */
+.nod {
+  animation: nod 6.4s ease-in-out infinite;
+}
+
+@keyframes nod {
+  0%,
+  100% {
+    transform: rotate(18deg);
+  }
+  40% {
+    transform: rotate(26deg);
+  }
+  46% {
+    transform: rotate(8deg);
+  }
+  52% {
+    transform: rotate(22deg);
+  }
+  70% {
+    transform: rotate(18deg);
+  }
+}
+
+/* Bolha de nariz: cresce devagar e estoura */
+.bubble {
+  fill: #d8f3ff;
+  fill-opacity: 0.85;
+  stroke: var(--line);
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: 0% 50%;
+  animation: bubble 3.2s ease-in-out infinite;
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+  62% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+  66% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}
+
+/* Zzz subindo e sumindo */
+.zzz {
+  fill: var(--line);
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+.z1 {
+  font-size: 14px;
+  animation: zFloat 3s ease-out 0s infinite;
+}
+
+.z2 {
+  font-size: 19px;
+  animation: zFloat 3s ease-out 1s infinite;
+}
+
+.z3 {
+  font-size: 25px;
+  animation: zFloat 3s ease-out 2s infinite;
+}
+
+@keyframes zFloat {
+  0% {
+    opacity: 0;
+    transform: translate(-6px, 8px) scale(0.5) rotate(10deg);
+  }
+  15% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    transform: translate(5px, -12px) scale(1.1) rotate(-12deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(8px, -17px) scale(1.2) rotate(-16deg);
+  }
+}

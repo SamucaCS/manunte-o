@@ -9,6 +9,8 @@ nuvens, no traço preto grosso dos bonecos da DICE: um pedreiro martela um prego
 rolo na parede, um operário cava areia e joga com a pá, um atravessa a obra
 carregando uma caixa e outro empurra um carrinho de mão. O guindaste leva um
 palete de tijolos até a laje e as fileiras de tijolos sobem uma a uma.
+Debaixo da placa "OBRA", um motorista tira um cochilo encostado no poste, de boné
+sobre os olhos, com "Zzz" subindo e bolha de nariz.
 
 O jeito de animar tem como referência a animação de "Irmão do Jorel": o traço
 treme sozinho como desenho feito à mão quadro a quadro (efeito "boiling line",
