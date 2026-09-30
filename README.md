@@ -44,6 +44,11 @@ npm run build
 O projeto usa exportação estática (`output: "export"`), então o site pronto fica
 na pasta `out/` e pode ser hospedado em qualquer servidor estático.
 
+## Deploy na Vercel
+
+Publicado em **https://manunte-o.vercel.app** (projeto `manunte-o` na Vercel, ligado a
+este repositório): cada push na `main` gera um deploy de produção.
+
 ## Deploy no GitHub Pages
 
 O workflow `.github/workflows/deploy.yml` faz o build e publica no GitHub Pages
